@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.login{
+    place-self: center;
+    place-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+    height: 520px;
+    width: 350px;
+
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.150);
+}
+
+.login-box .detail{
+    position: absolute;
+    place-self: center;
+    transform: translate(0px, -255px);
+
+    width: 150px;
+    height: 10px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.login-box h2{
+    font-size: 4vh;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+}
+
+.login form input{
+    display: flex;
+    width: 250px;
+    padding: 15px;
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+
+    font-size: 2vh;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.login form button{
+    display: flex;
+    justify-content: center;
+    place-self: center;
+    width: 200px;
+    padding: 10px;
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+
+    font-size: 2vh;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.login form button:hover{
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.chat{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.chat-messages{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding: 30px 30px 90px;
+}
+
+.chat-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    padding: 15px 00px;
+    gap: 20px;
+    max-width: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.150);
+}
+
+.chat-form input{
+    width: 60%;
+    padding: 15px 20px;
+    
+    border: 0px;
+    background-color: rgb(255, 255, 255, 0.150);
+    border-radius: 5px;
+    outline: none;
+
+    color: white;
+    font-size: 2vh;
+}
+
+.chat-form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(23, 23, 128);
+    border: 0px;
+    border-radius: 50%;
+    height: 6.5vh;
+    width: 6.5vh;
+}
+
+.chat-form button img{
+    height: 5vh;
+    border: 0px;
+    border-radius: 50%;
+}
+
+.chat-messages div{
+    padding: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+.message-self{
+    align-self: flex-end;
+    color: black;
+    background-color: white;
+    border-radius: 5px 5px 0px 5px;
+}
+
+.message-other{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: flex-start;
+    color: white;
+    background-color: rgb(9, 9, 138);
+    border-radius: 0px 5px 5px 5px;
+}
+
+.message-sender{
+    color: brown;
+    font-weight: 600;
+}
